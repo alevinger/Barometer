@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+          <link rel="stylesheet" type="text/css" href="./includes/css/style.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="./includes/js/barometer.js"></script>
+
+          <script type="text/javascript">
+              $( document ).ready(function() {
+                  $('#barometer').barometer({
+                    placeholder: "degrees: ",
+                    startvalue: "-25"
+                  });
+              });
+          </script>
+
+      </head>
+
+      <body>
+      <div id="barometer"></div>
+
+      </body>
+
+</html>
