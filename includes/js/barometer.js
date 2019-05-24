@@ -38,12 +38,11 @@
 
       createInputContainer: function () {
           const self = this;
-          const input = $("<form id=\"barometer_form\"><label>"+ this.options.placeholder + "</label><input type=\"number\" value="+this.options.startvalue+" step=\""+this.options.steps+"\"/></form>");
+          const input = $("<form id=\"barometer_form\"><label>"+ this.options.placeholder + "</label><input type=\"number\" min=\"-45\" max=\"225\" value="+this.options.startvalue+" step=\""+this.options.steps+"\"/></form>");
           self.$element.append(input);
       },
 
       rotate: function ( degs ) {
-          console.log("rotate: "+ degs);
             const self = this;
             const $arrow =  this.$element.find('.arrow');
             // For webkit browsers: e.g. Chrome
